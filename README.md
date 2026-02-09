@@ -32,13 +32,13 @@ git clone https://github.com/Stepan-DE/greek-fitness-club-website.git
 ## Структура проекта:
 ```text
 TELOS-club-website/
-├── index.html          # Главная страница
-├── README.md           # Этот файл
-├── website-preview.gif # Видео-превью работы сайта
-├── css/                # Стили
-├── fonts/              # Шрифты
-├── images/             # Изображения и фотографии
-└── webfonts/           # Иконки (Font Awesome)
+├── index.html             # Главная страница
+├── README.md              # Этот файл
+├── greek-site-privie.mp4  # Видео-превью работы сайта
+├── css/                   # Стили
+├── fonts/                 # Шрифты
+├── images/                # Изображения и фотографии
+└── webfonts/              # Иконки (Font Awesome)
 ```
 ## Этапы дальнейшего развития сайта: 
 Сайт является только макетом для отрботки с версткой и требует не малых улучшений, таких как:
