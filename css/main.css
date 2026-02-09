@@ -1,0 +1,103 @@
+/* Шрифты */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/CormorantGaramond-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/CormorantGaramond-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/CormorantGaramond-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/CormorantGaramond-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(15, 15, 20);
+}
+
+:target {
+    scroll-margin-top: 100px;
+}
+
+:root {
+    --color-bg-dark: rgb(15, 15, 20);
+    --color-bg-card: rgb(26, 26, 32);
+    --color-gold: rgb(212, 175, 55);
+    --color-gold-light: rgb(238, 210, 120);
+    --color-text-light: rgb(240, 240, 240);
+    --color-text-gray: rgb(180, 180, 190);
+    --color-border: rgba(255, 255, 255, 0.05);
+}
+
+:root {
+    /* Базовый размер для 1920px */
+    --base-width: 1920;
+    /* Текущий масштаб */
+    --scale: calc(100vw / var(--base-width));
+
+    /* Все размеры теперь масштабируются */
+    --section-padding: calc(50px * var(--scale));
+    --container-width: calc(1400px * var(--scale));
+    --font-size-h1: clamp(2rem, calc(4rem * var(--scale)), 5rem);
+}
+
+body {
+    min-width: 1024px;
+    /* Минимальная ширина */
+}
+
+/* Пример использования: */
+.main h1 {
+    font-size: var(--font-size-h1);
+}
+
+.blocks {
+    max-width: var(--container-width);
+    padding: var(--section-padding);
+}

@@ -1,0 +1,126 @@
+/* Параметры раздела */
+#disciplines {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg-dark);
+}
+
+/* Заголовок */
+#disciplines .main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
+
+    color: var(--color-text-light);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#disciplines .main span {
+    color: var(--color-gold)
+}
+
+#disciplines .main p {
+    text-align: center;
+    padding-left: 55vh;
+    padding-right: 55vh;
+    padding-top: 10px;
+
+    color: var(--color-text-gray);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Блоки направлений */
+#strength-training-blc, #functional-training-blc, #relax-blc, #personal-programs-blc  {
+    background-color: var(--color-bg-card);
+    width: 280px;
+    height: 420px;
+    
+    float: left;
+    border-radius: 5px;
+    border: 1.5px solid var(--color-border);
+    margin: 20px;
+    padding: 30px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: box-shadow 0.35s ease-in-out, margin-top 0.5s ease;
+}
+
+#strength-training-blc, #functional-training-blc, #relax-blc, #personal-programs-blc, h3{
+    color: var(--color-text-light);
+}
+
+#strength-training-blc, #functional-training-blc, #relax-blc, #personal-programs-blc, p {
+    color: var(--color-text-gray);
+}
+
+/* выравнивание блоков по центру (горизонталь) */
+#disciplines .blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+/* Иконки */
+.discipline-icon {
+    font-size: 3rem;
+    color: rgb(212, 175, 55);
+    margin-bottom: 1.5rem;
+}
+
+.discipline-link i {
+    font-size: 1.1rem;
+    margin-left: 6px;
+}
+
+/* стили текста в блоках */ 
+#disciplines .blocks h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#disciplines .blocks p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+/* Сслыка -подробнее- */
+#disciplines a {
+    text-decoration: none;
+    color: var(--color-gold);
+
+    transition: color 0.5s ease;
+    margin-top: auto;
+    padding-top: 15px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#disciplines a:hover {
+    color: var(--color-gold-light);
+}
+
+/* Анимация при наведении на блок */
+#strength-training-blc:hover, 
+#functional-training-blc:hover, 
+#relax-blc:hover, 
+#personal-programs-blc:hover {
+    margin-top: -15px;
+    box-shadow: 0 10px 20px 2.5px rgb(37, 36, 36);
+}

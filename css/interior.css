@@ -1,0 +1,82 @@
+/* Параметры раздела */
+#interior {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg-dark);
+}
+
+/* Заголовок */
+#interior .main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
+
+    color: var(--color-text-light);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#interior .main span {
+    color: var(--color-gold)
+}
+
+
+#interior .main p {
+    text-align: center;
+    padding-left: 55vh;
+    padding-right: 55vh;
+    padding-top: 10px;
+
+    color: var(--color-text-gray);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Фото интерьера */
+#interier-blc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 90px;
+}
+
+#interier-blc div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    position: relative;
+}
+
+#interier-blc img {
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid var(--color-gold);
+
+    transition: transform 0.5s ease;
+
+    position: relative;
+    z-index: 1;
+}
+
+#interier-blc img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+#interier-blc p {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--color-text-light);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    z-index: 0;
+}
